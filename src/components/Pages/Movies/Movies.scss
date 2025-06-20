@@ -1,0 +1,43 @@
+.movies {
+    padding-top: 120px;
+    overflow-x: hidden;
+
+    &-title {
+        text-align: center;
+        color: #fff;
+        font-family: var(--poppins);
+        font-weight: 600;
+        font-size: 35px;
+        margin-bottom: 15px;
+    }
+
+    &__genres {
+        padding-inline: 10px;
+        display: flex;
+        grid-gap: 10px;
+        overflow-x: scroll;
+        scroll-snap-type: inline mandatory;
+        padding-bottom: 15px;
+
+        &::-webkit-scrollbar {
+            background: transparent;
+            height: 10px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: #d3d3d3;
+            border-radius: 8px;
+
+            &:hover {
+                background: #999999;
+            }
+        }
+
+        &::-webkit-scrollbar-track {
+            background-color: transparent;
+            /* Un color de fondo más claro */
+            border-radius: 10px;
+            /* Bordes redondeados para la pista */
+        }
+    }
+}

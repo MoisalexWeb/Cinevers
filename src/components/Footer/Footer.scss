@@ -1,0 +1,56 @@
+.footer {
+    background-color: #000;
+    padding: 60px 0;
+
+    &__container {
+        width: 95%;
+        max-width: 1500px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 50px;
+    }
+
+    &-logo {
+        color: #fff;
+        font-family: var(--poppins);
+        font-weight: 600;
+        font-size: 20px;
+        display: inline-flex;
+        align-items: center;
+        grid-gap: 8px;
+        height: max-content;
+        transition: color 0.3s ease;
+
+        &:hover {
+            color: var(--primary-color);
+        }
+    }
+
+    &__item {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 5px;
+        height: max-content;
+        text-align: center;
+
+        &-link {
+            color: #fff;
+            font-weight: 500;
+            font-size: 16px;
+            transition: color 0.3s ease;
+
+            &:hover {
+                color: var(--primary-color);
+            }
+        }
+    }
+
+    &__api {
+        text-align: right;
+
+        &-img {
+            width: 100px;
+        }
+    }
+}

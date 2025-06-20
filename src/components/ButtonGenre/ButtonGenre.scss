@@ -1,0 +1,21 @@
+.genre-button {
+    color: #fff;
+    display: inline-block;
+    border: 1px solid #fff;
+    font-family: var(--opens);
+    font-size: 15px;
+    font-weight: 500;
+    padding: 5px 15px;
+    border-radius: 20px;
+    transition: all 0.3s;
+    background: none;
+    cursor: pointer;
+    width: max-content;
+    line-height: 1;
+    // height: max-content;
+
+    &:hover,
+    &.active-genre {
+        background-color: var(--primary-color);
+    }
+}

@@ -1,0 +1,28 @@
+// 
+
+:root {
+    --open: "Open Sans", sans-serif;
+    --poppins: "Poppins", sans-serif;
+    --primary-color: #337deb;
+    --black: #0b0a0a;
+    // --primary-color: #607AFB;
+}
+
+body {
+    font-family: var(--open);
+    font-weight: 400;
+    background-color: rgb(39 38 38);
+    // background-color: rgb(20, 20, 20);
+    color: #f2f2f2;
+}
+
+main {
+    min-height: 100vh;
+}
+
+.section-container {
+    width: 95%;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
