@@ -1,6 +1,6 @@
 import "./Movies.scss"
 import { ButtonGenre } from "../../ButtonGenre/ButtonGenre"
-import { useMovies } from "./hooks/useMovies"
+import { useMovies } from "./hooks/useMovies.ts"
 import type { Genre } from "../../../types"
 import { useState } from "react"
 import { MoviesGrid } from "../../MoviesGrid/MoviesGrid"
@@ -8,13 +8,8 @@ import { MoviesGrid } from "../../MoviesGrid/MoviesGrid"
 
 export const Movies = () => {
     const [currentGenre, setCurrentGenre] = useState<number | null>(null)
-    const { genres, movies, loading, loadMoreBtn, getFeedMovies, nextPage } = useMovies()
+    const { genres, movies, loading, loadMoreBtn, fetchMoreVideos } = useMovies()
 
-    const fetchMoreVideos = () => {
-        getFeedMovies({
-            page: nextPage
-        })
-    }
 
 
     return (
